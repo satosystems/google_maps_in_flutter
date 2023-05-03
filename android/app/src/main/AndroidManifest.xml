@@ -1,11 +1,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.google_maps_in_flutter">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
    <application
         android:label="google_maps_in_flutter"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <meta-data android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBn_YYJx-CTEjcAulhMRVuKn7B4YomL3Bw"/>
+            android:value="AIzaSyDCgPLAtQ1QWSLw9f0gp4TfHGBQAgWKF9s"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
